@@ -10,7 +10,7 @@ jobs:
 
   prediction:
     runs-on: ubuntu-latest
-    container: mensajemartin1/ai-ops:latest
+    container: adsoft/ai-ops:latest
 
     steps:
     - uses: actions/checkout@v2
