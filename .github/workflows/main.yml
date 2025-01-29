@@ -38,4 +38,4 @@ jobs:
       run: docker commit --change "ENV MODEL_NAME ${{secrets.MODEL_NAME}}" serving_base mensajemartin1/tensorflow-linear-model:${{ github.sha }}
   
     - name: Docker Push
-      run: docker push ${{secrets.DOCKER_USER}}/tensorflow-${{secrets.MODEL_NAME}}:${{ github.sha }}
+      run: docker push ${{secrets.DOCKER_USER}}/tensorflow-linear-model:${{ github.sha }}
